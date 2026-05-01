@@ -2,6 +2,14 @@
     box-sizing: border-box;  
 }
 
+body{
+    background: 
+    linear-gradient(rgba(3, 3, 3, 0.644), rgba(3, 3, 3, 0.274)),
+    #c7a17a;
+    margin: 0px;
+    min-height: 100vh;
+}
+
 .navbar {
     background-image: 
         linear-gradient(rgba(3, 3, 3, 0.644), rgba(3, 3, 3, 0.274)),
@@ -30,15 +38,13 @@ a{
     margin-left: auto;
     padding-right: 150px;
     font-size: 30px;
+    font-weight: 700;
 }
 
-
-body{
-    background-color: #c7a17a;
-    margin: 0px;
+.main-content{
+    display: flex;
 }
-
-.content1{
+/* .content1{
     display: flex;
     
 }
@@ -50,7 +56,7 @@ body{
     margin-right: 150px;
     border-radius: 20px;
     font-size: 20px;
-}
+} */
 img{
     margin-left: 80px;
     border-radius: 20px;
@@ -67,21 +73,59 @@ img:hover{
 
 .content2{
     display: flex;
-    height: auto;
+    height: 512px;
+    width: auto;
+    color: azure;
     
 }
 
 .inside-content2{
     display: block;
     margin-left: auto;
-    width: 450px;
-    margin-right: 150px;
-    font-size: xx-large;
+    width: 400px;
+    font-size: large;
+    background:
+    linear-gradient(rgba(3, 3, 3, 0.644), rgba(3, 3, 3, 0.274)),
+     #704821;
+    border-radius: 20px;
+    padding: 20px;
+    align-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow;
 }
 
 .inside-content1{
     display: block;
-    width: 450px;
-    margin-left: 150px;
-    font-size: xx-large;
+    width: 400px;
+    margin-left: 110px;
+    font-size: large;
+    background:
+    linear-gradient(rgba(3, 3, 3, 0.644), rgba(3, 3, 3, 0.274)),
+     #704821;
+    border-radius: 20px;
+    margin-right: 90px;
+    align-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow;
+}
+
+.inside-content1:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.inside-content2:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.content{
+    text-align: center;
+}
+
+.inside-content1, .inside-content2 {
+    min-height: 520px; /* Adjust this value so both cards match perfectly */
 }
