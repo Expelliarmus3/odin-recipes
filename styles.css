@@ -1,0 +1,46 @@
+*{
+    background-color: pink;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: bisque;
+    padding: 25px;
+    border: 20px solid palevioletred;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    font-style: italic;
+}
+
+a{
+    display: inline-block;
+    color: brown;
+    margin-left: 15px;
+    width: 500px; 
+    height: 500px;  
+    align-content: center;
+    text-align: center;
+    background-color: antiquewhite;
+    border: 10px solid burlywood;
+    font-weight: 200px;
+    font-style: italic;
+    font-size: 40px;
+    text-decoration: none;
+
+}
+
+
+.float{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow;
+}
+.float:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    
+}
