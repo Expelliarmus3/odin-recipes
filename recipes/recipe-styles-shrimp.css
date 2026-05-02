@@ -4,7 +4,7 @@
 body{
     background: 
     linear-gradient(rgba(3, 3, 3, 0.658), rgba(3, 3, 3, 0.041)),
-    #f9d590;
+     #e14f4f ;
     margin: 0px;
     min-height: 100vh;
 }
@@ -18,7 +18,7 @@ body{
     
     background-image: 
         linear-gradient(rgba(3, 3, 3, 0.493), rgba(3, 3, 3, 0.322)),
-        url('./Lemon-Artichoke-Chicken_v2-1-of-1-scaled-e1753725798746.webp');
+        url('./Creamy-Pesto-Shrimp02-1024x559.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ a{
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     padding: 0 20px;                /* Adds spacing on the sides of the row */
-
+    font-size: large;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -68,7 +68,7 @@ a{
     height: 570px;                  /* Give them all the exact same height */
     object-fit: cover;              /* Prevents the img from distorting at this height */
     
-    background: linear-gradient(rgba(3, 3, 3, 0.082), rgba(3, 3, 3, 0.274)), #f6ec85;
+    background: linear-gradient(rgba(3, 3, 3, 0.082), rgba(3, 3, 3, 0.479)), #e14f4f ;
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -87,6 +87,7 @@ a{
 .content1,.content2{
     padding: 20px;
     align-content: center;
+    color: antiquewhite;
 }
 .content1 h3, .content2 h3{
     text-align: center;
@@ -97,13 +98,14 @@ a{
     font-style: italic;
     font-size: xx-large;
     margin-bottom: 50px;
-    color: #eece80;
+    color: #ff9f9f;
     padding: 20px;
 }
 .top{
     display: flex;
     justify-content: center;
     gap: 50px;
+    margin-top: 50px;
     
 }
 .top img{
