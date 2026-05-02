@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+
+}
+
+.navbar a{
+    margin-left: auto;
+}
+
+.content{
+    display: flex;
+    
+}
+
+.content1,.content2{
+    display: block;
+}
