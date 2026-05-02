@@ -3,7 +3,7 @@
 }
 body{
     background: 
-    linear-gradient(rgba(3, 3, 3, 0.596), rgba(3, 3, 3, 0)),
+    linear-gradient(rgba(3, 3, 3, 0.658), rgba(3, 3, 3, 0.041)),
     #f9d590;
     margin: 0px;
     min-height: 100vh;
@@ -52,10 +52,13 @@ a{
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     padding: 0 20px;                /* Adds spacing on the sides of the row */
+
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* 2. Target the cards directly so they share the same base styling */
-.content1, .content2, img {
+.content1, .content2, .image {
     flex: 1;                        /* Forces all 3 items to take up equal width */
     height: 570px;                  /* Give them all the exact same height */
     object-fit: cover;              /* Prevents the img from distorting at this height */
@@ -71,7 +74,43 @@ a{
 }
 
 /* 3. Combined hover effect for efficiency */
-.content1:hover, .content2:hover, img:hover {
+.content1:hover, .content2:hover, .image:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.content1,.content2{
+    padding: 20px;
+    align-content: center;
+}
+.content1 h3, .content2 h3{
+    text-align: center;
+}
+.desc{
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: xx-large;
+    margin-bottom: 50px;
+    color: #eece80;
+    padding: 20px;
+}
+
+.desc img,.footer img{
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow;
+    
+}
+
+.desc img:hover,.footer img:hover{
+    transform: translateY(-8px);
+    text-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
 }
