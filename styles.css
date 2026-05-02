@@ -1,12 +1,17 @@
 *{
-    background-color: pink;
     box-sizing: border-box;
 }
-
+body{
+    margin: 0;
+    background: 
+    linear-gradient(rgba(3, 3, 3, 0.534), rgba(3, 3, 3, 0.137)),
+    #d89f8e;
+    min-height: 100vh;
+}
 h1{
-    background-color: bisque;
-    padding: 25px;
-    border: 20px solid palevioletred;
+    background: linear-gradient(rgba(3, 3, 3, 0.664), rgba(3, 3, 3, 0.384)),
+    url("./recipes/background-food-dishes-snacks-photo-260nw-2490284945.webp");
+    padding: 40px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -14,33 +19,65 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     font-size: 80px;
     font-style: italic;
+    color: 	#e9e0a5;
 }
 
 a{
     display: inline-block;
-    color: brown;
+    color: #e9e0a5;
     margin-left: 15px;
     width: 500px; 
     height: 500px;  
     align-content: center;
     text-align: center;
-    background-color: antiquewhite;
-    border: 10px solid burlywood;
+    border-radius: 20px;
     font-weight: 200px;
     font-style: italic;
     font-size: 40px;
     text-decoration: none;
+    background-color: 	#c6765b;
+    
 
 }
 
-
+.contents{
+    display: flex;
+    justify-content: space-between; /* Spreads them out evenly */
+    align-items: stretch;           /* Forces all children to have the same height */
+    gap: 20px;  
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+}
 .float{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     will-change: transform, box-shadow;
+    
 }
 .float:hover{
     transform: translateY(-8px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     
 }
+
+.icons{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+    margin-bottom: 50px;
+    
+}
+.icons img{
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow;
+}
+
+.icons img:hover{
+    transform: translateY(-8px);
+    text-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
