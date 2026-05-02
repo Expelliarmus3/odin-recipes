@@ -1,21 +1,77 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background: 
+    linear-gradient(rgba(3, 3, 3, 0.596), rgba(3, 3, 3, 0)),
+    #f9d590;
+    margin: 0px;
+    min-height: 100vh;
+}
 
 .navbar{
-    display: flex;
-
-}
-
-.navbar a{
-    margin-left: auto;
-}
-
-.content{
-    display: flex;
     
+    background-image: 
+        linear-gradient(rgba(3, 3, 3, 0.493), rgba(3, 3, 3, 0.322)),
+        url('./Lemon-Artichoke-Chicken_v2-1-of-1-scaled-e1753725798746.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    margin-bottom: 30px;
+    padding: 20px;
+    align-items: center;
 }
 
-.content1,.content2{
-    display: block;
+h1{
+    color: whitesmoke;
+    font-size: 60px;
+    text-align: left;
+    padding-left: 50px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: auto;
+    padding-right: 150px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+/* 1. Make sure the direct parent is a flex container */
+.content {
+    display: flex;
+    justify-content: space-between; /* Spreads them out evenly */
+    align-items: stretch;           /* Forces all children to have the same height */
+    gap: 20px;                      /* Replaces messy individual margins with uniform spacing */
+    margin-bottom: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    padding: 0 20px;                /* Adds spacing on the sides of the row */
+}
+
+/* 2. Target the cards directly so they share the same base styling */
+.content1, .content2, img {
+    flex: 1;                        /* Forces all 3 items to take up equal width */
+    height: 570px;                  /* Give them all the exact same height */
+    object-fit: cover;              /* Prevents the img from distorting at this height */
+    
+    background: linear-gradient(rgba(3, 3, 3, 0.082), rgba(3, 3, 3, 0.274)), #f6ec85;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow;
+    
+    /* Remove the conflicting individual margins */
+    margin: 0; 
+}
+
+/* 3. Combined hover effect for efficiency */
+.content1:hover, .content2:hover, img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
